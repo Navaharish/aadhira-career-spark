@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Star, Quote, Play, LinkedIn } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Star, Quote, Play, Linkedin } from 'lucide-react';
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -139,7 +138,7 @@ const Testimonials = () => {
                     <h4 className="font-bold text-gray-900 text-lg">{currentTestimonial.name}</h4>
                     {currentTestimonial.linkedin && (
                       <a href={currentTestimonial.linkedin} className="text-blue-600 hover:text-blue-700 transition-colors">
-                        <LinkedIn size={20} />
+                        <Linkedin size={20} />
                       </a>
                     )}
                   </div>
